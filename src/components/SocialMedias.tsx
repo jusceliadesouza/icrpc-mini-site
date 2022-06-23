@@ -2,11 +2,7 @@ import { InstagramLogo, FacebookLogo, MapPin, YoutubeLogo } from 'phosphor-react
 
 const weight = "regular"
 
-interface SocialMediasProps {
-  url: string
-}
-
-export function SocialMedias(props: SocialMediasProps) {
+export function SocialMedias() {
   return (
     <div className='icons flex gap-2'>
       <a href="http://instagram.com/icrportocanoa" target="_blank" rel="noopener noreferrer">
