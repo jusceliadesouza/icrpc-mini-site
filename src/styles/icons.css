@@ -1,0 +1,13 @@
+/* Social Medias Icons */
+
+.icons {
+  @apply flex gap-6
+}
+
+.icon {
+  @apply w-6 h-6 flex items-center justify-center
+}
+
+.icons a:hover {
+  @apply text-orange-500 rounded-[50%] shadow-black shadow-xl 
+}

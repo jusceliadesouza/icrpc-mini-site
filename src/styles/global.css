@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-emerald-700 text-white;
+  --webkit-font-smoothing: antialiased;
+}
+
+@layer base {
+  html {
+    font-family: Poppins, Dancing Script, Bebas Neue
+  }
+}
