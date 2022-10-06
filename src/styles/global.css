@@ -4,11 +4,13 @@
 
 body {
   @apply bg-emerald-700 text-white;
-  --webkit-font-smoothing: antialiased;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer base {
   html {
-    font-family: Poppins, Dancing Script, Bebas Neue
+    font-family: Poppins, Dancing Script, Bebas Neue;
   }
 }
