@@ -1,39 +1,23 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 interface ButtonProps {
-  title: string
-  link: string
+  title: string;
+  link: string;
+  className?: string;
 }
 
-export function Button(props: ButtonProps) {
+export function Button({ title, link }: ButtonProps) {
   return (
-      // <a
-      //   className="p-2 text-center rounded-xl border hover:bg-white hover:text-emerald-700 hover:font-bold"
-      //   href={props.link}
-      //   rel="noopener noreferrer"
-      //   target="_blank"
-      // >
-      //   {props.title}
-      // </a>
-
-      <Link 
-        to={props.link}
-        className="p-2 border rounded-xl text-center hover:bg-white hover:text-emerald-700 hover:font-bold hover:uppercase transitions" 
-      >
-        {props.title}
-        </Link>
-  )
+    <Link to={link} className="button">
+      {title}
+    </Link>
+  );
 }
 
-export function ButtonURL(props: ButtonProps) {
+export function ButtonURL({ title, link }: ButtonProps) {
   return (
-      <a
-        className="p-2 text-center rounded-xl border hover:bg-white hover:text-emerald-700 hover:font-bold"
-        href={props.link}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        {props.title}
-      </a>
-  )
+    <a className="button" href={link} rel="noopener noreferrer">
+      <span>{title}</span>
+    </a>
+  );
 }

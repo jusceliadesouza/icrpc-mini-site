@@ -1,14 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 
+import { Confissao } from "./pages/Confissao";
 import { Links } from "./pages/Links";
-import { Federacao } from "./pages/Federacao";
 
 export function Router() {
   return (
     <Routes>
       <Route path="/" element={<Links />} />
 
-      <Route path="/federacao" element={<Federacao />} />
+      {/* Documentos da ICRAB */}
+      <Route path="/icrab/confissao-de-fe" element={<Confissao />} />
     </Routes>
-  )
+  );
 }

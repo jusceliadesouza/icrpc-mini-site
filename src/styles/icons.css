@@ -1,13 +1,13 @@
 /* Social Medias Icons */
 
 .icons {
-  @apply flex gap-6
+  @apply flex justify-center;
 }
 
-.icon {
-  @apply w-6 h-6 flex items-center justify-center
+.icons a {
+  @apply flex items-center justify-center p-3 text-zinc-900;
 }
 
 .icons a:hover {
-  @apply text-orange-500 rounded-[50%] shadow-black shadow-xl 
+  @apply bg-emerald-700/10 text-emerald-700 rounded-full;
 }
